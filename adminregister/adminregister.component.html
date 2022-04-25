@@ -1,0 +1,56 @@
+<div class="body">
+  <div class="container">
+    <div class="title" align="center">Admin Registration</div>
+    <div class="content">
+      <form (ngSubmit)="onSubmit()">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"
+              >Full Name <span class="required">*</span></span
+            >
+            <input
+              type="text"
+              placeholder="Enter admin name"
+              required
+              name="adminFullName"
+              [(ngModel)]="register.adminFullName"
+            />
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email <span class="required">*</span></span>
+            <input
+              type="email"
+              placeholder="Enter admin email"
+              required
+              name="adminEmail"
+              [(ngModel)]="register.adminEmail"
+            />
+          </div>
+          
+          <div class="input-box">
+            <span class="details"
+              >Password <span class="required">*</span></span
+            >
+            <input type="password" placeholder="Enter password" required />
+          </div>
+          <div class="input-box">
+            <span class="details"
+              >Confirm Password <span class="required">*</span></span
+            >
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              required
+              name="adminPassword"
+              [(ngModel)]="register.adminPassword"
+            />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Update Loan Application Status</h1>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label for="name">Loan Application Status</label>
+      <input type="text" class="form-control" id="loanApplicationStatus" required [(ngModel)]="loanapplication.loanApplicationStatus" name="loanApplicationStatus">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>Updated successfully!</h4>
+</div>
+</div>
